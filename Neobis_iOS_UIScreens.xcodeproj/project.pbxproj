@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06225A76DCF95480DBB1FB43 /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA56811A4074D390DD14D728 /* Pods_Neobis_iOS_UIScreens.framework */; };
 		DC50342F29E2A88E0047269E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50342E29E2A88E0047269E /* AppDelegate.swift */; };
 		DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50343029E2A88E0047269E /* SceneDelegate.swift */; };
-		DC50343329E2A88E0047269E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50343229E2A88E0047269E /* ViewController.swift */; };
+		DC50343329E2A88E0047269E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50343229E2A88E0047269E /* MainViewController.swift */; };
 		DC50343629E2A88E0047269E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50343429E2A88E0047269E /* Main.storyboard */; };
 		DC50343829E2A8910047269E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC50343729E2A8910047269E /* Assets.xcassets */; };
 		DC50343B29E2A8910047269E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50343929E2A8910047269E /* LaunchScreen.storyboard */; };
+		DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344529E2B7BD0047269E /* MainViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A746F171E802783060EDB51 /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens.debug.xcconfig"; sourceTree = "<group>"; };
+		8825881DB58DB072222B5FFE /* Pods-Neobis_iOS_UIScreens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_UIScreens.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens.release.xcconfig"; sourceTree = "<group>"; };
+		AA56811A4074D390DD14D728 /* Pods_Neobis_iOS_UIScreens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_UIScreens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC50342B29E2A88E0047269E /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC50342E29E2A88E0047269E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC50343029E2A88E0047269E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC50343229E2A88E0047269E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC50343229E2A88E0047269E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DC50343529E2A88E0047269E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC50343729E2A8910047269E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC50343A29E2A8910047269E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC50343C29E2A8910047269E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC50344529E2B7BD0047269E /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06225A76DCF95480DBB1FB43 /* Pods_Neobis_iOS_UIScreens.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AEDAF6A0543ED789355B243 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A746F171E802783060EDB51 /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */,
+				8825881DB58DB072222B5FFE /* Pods-Neobis_iOS_UIScreens.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DC50342229E2A88E0047269E = {
 			isa = PBXGroup;
 			children = (
 				DC50342D29E2A88E0047269E /* Neobis_iOS_UIScreens */,
 				DC50342C29E2A88E0047269E /* Products */,
+				2AEDAF6A0543ED789355B243 /* Pods */,
+				E5546DFD3960B0863C450E29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,48 @@
 		DC50342D29E2A88E0047269E /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
-				DC50342E29E2A88E0047269E /* AppDelegate.swift */,
-				DC50343029E2A88E0047269E /* SceneDelegate.swift */,
-				DC50343229E2A88E0047269E /* ViewController.swift */,
+				DC50344429E2B7AC0047269E /* Controller */,
+				DC50344329E2B7A60047269E /* View */,
+				DC50344229E2B7970047269E /* Delegate */,
 				DC50343429E2A88E0047269E /* Main.storyboard */,
 				DC50343729E2A8910047269E /* Assets.xcassets */,
 				DC50343929E2A8910047269E /* LaunchScreen.storyboard */,
 				DC50343C29E2A8910047269E /* Info.plist */,
 			);
 			path = Neobis_iOS_UIScreens;
+			sourceTree = "<group>";
+		};
+		DC50344229E2B7970047269E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC50342E29E2A88E0047269E /* AppDelegate.swift */,
+				DC50343029E2A88E0047269E /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DC50344329E2B7A60047269E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC50344529E2B7BD0047269E /* MainViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC50344429E2B7AC0047269E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC50343229E2A88E0047269E /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5546DFD3960B0863C450E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA56811A4074D390DD14D728 /* Pods_Neobis_iOS_UIScreens.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC50343F29E2A8910047269E /* Build configuration list for PBXNativeTarget "Neobis_iOS_UIScreens" */;
 			buildPhases = (
+				4EC1F050FC3E2523CE0D4C55 /* [CP] Check Pods Manifest.lock */,
 				DC50342729E2A88E0047269E /* Sources */,
 				DC50342829E2A88E0047269E /* Frameworks */,
 				DC50342929E2A88E0047269E /* Resources */,
+				5DF2A2A058FFA377AD70F91E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +186,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EC1F050FC3E2523CE0D4C55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_UIScreens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DF2A2A058FFA377AD70F91E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_UIScreens/Pods-Neobis_iOS_UIScreens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC50342729E2A88E0047269E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC50343329E2A88E0047269E /* ViewController.swift in Sources */,
+				DC50343329E2A88E0047269E /* MainViewController.swift in Sources */,
+				DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */,
 				DC50342F29E2A88E0047269E /* AppDelegate.swift in Sources */,
 				DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +378,7 @@
 		};
 		DC50344029E2A8910047269E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A746F171E802783060EDB51 /* Pods-Neobis_iOS_UIScreens.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +406,7 @@
 		};
 		DC50344129E2A8910047269E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8825881DB58DB072222B5FFE /* Pods-Neobis_iOS_UIScreens.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
