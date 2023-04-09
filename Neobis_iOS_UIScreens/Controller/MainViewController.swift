@@ -16,7 +16,7 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
         super.viewDidLoad()
         
         collectionView.register(MainViewCell.self, forCellWithReuseIdentifier: cellId)
-        
+                
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? MainViewCell else {return UICollectionViewCell()}
@@ -33,13 +33,19 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         switch indexPath.item {
         case 0: present(UIViewController(), animated: true)
         case 1: present(UIViewController(), animated: true)
         case 2: present(UIViewController(), animated: true)
         case 3: present(UIViewController(), animated: true)
-        default : present(UIViewController(), animated: true)
+        default : present(presentFullScreen(viewController: SinglesTabBarController()), animated: true)
         }
+    }
+    
+    fileprivate func presentFullScreen(viewController: UIViewController) -> UIViewController {
+        viewController.modalPresentationStyle = .fullScreen
+        return viewController
     }
     
     
