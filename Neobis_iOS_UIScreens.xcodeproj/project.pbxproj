@@ -15,11 +15,11 @@
 		DC50343829E2A8910047269E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC50343729E2A8910047269E /* Assets.xcassets */; };
 		DC50343B29E2A8910047269E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50343929E2A8910047269E /* LaunchScreen.storyboard */; };
 		DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344529E2B7BD0047269E /* MainViewCell.swift */; };
-		DC50344929E2CD5F0047269E /* SinglesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344829E2CD5F0047269E /* SinglesTabBarController.swift */; };
 		DC50344B29E2D8700047269E /* SinglesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344A29E2D8700047269E /* SinglesCollectionViewController.swift */; };
 		DC50344E29E2D9690047269E /* SinglesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344D29E2D9690047269E /* SinglesCollectionViewCell.swift */; };
 		DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344F29E2DA780047269E /* SinglesCollectionViewHeader.swift */; };
 		DC50345329E2F5000047269E /* Serials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50345229E2F5000047269E /* Serials.swift */; };
+		DC50345729E313170047269E /* SinglesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50345629E313170047269E /* SinglesTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +35,11 @@
 		DC50343A29E2A8910047269E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC50343C29E2A8910047269E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC50344529E2B7BD0047269E /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
-		DC50344829E2CD5F0047269E /* SinglesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTabBarController.swift; sourceTree = "<group>"; };
 		DC50344A29E2D8700047269E /* SinglesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesCollectionViewController.swift; sourceTree = "<group>"; };
 		DC50344D29E2D9690047269E /* SinglesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC50344F29E2DA780047269E /* SinglesCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesCollectionViewHeader.swift; sourceTree = "<group>"; };
 		DC50345229E2F5000047269E /* Serials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serials.swift; sourceTree = "<group>"; };
+		DC50345629E313170047269E /* SinglesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		DC50344729E2CD440047269E /* Singles */ = {
 			isa = PBXGroup;
 			children = (
-				DC50344829E2CD5F0047269E /* SinglesTabBarController.swift */,
 				DC50344A29E2D8700047269E /* SinglesCollectionViewController.swift */,
+				DC50345629E313170047269E /* SinglesTabBarController.swift */,
 			);
 			path = Singles;
 			sourceTree = "<group>";
@@ -272,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC50345729E313170047269E /* SinglesTabBarController.swift in Sources */,
 				DC50344B29E2D8700047269E /* SinglesCollectionViewController.swift in Sources */,
-				DC50344929E2CD5F0047269E /* SinglesTabBarController.swift in Sources */,
 				DC50343329E2A88E0047269E /* MainViewController.swift in Sources */,
 				DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */,
 				DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  SinglesTabbarController.swift
+//  SinglesTabBarController.swift
 //  Neobis_iOS_UIScreens
 //
 //  Created by Тагай Абдылдаев on 9/4/23.
