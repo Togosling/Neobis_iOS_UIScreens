@@ -59,16 +59,11 @@ class SinglesCollectionViewCell: UICollectionViewCell {
         
     override init(frame: CGRect) {
         super .init(frame: frame)
-        
+
+
         layer.borderWidth = 1
         layer.borderColor = UIColor(red: 0.854, green: 0.854, blue: 0.854, alpha: 1).cgColor
-        
-        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.15).cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1)
-        layer.shadowRadius = 10
-        layer.shadowOpacity = 1
-        layer.masksToBounds = false
-        
+      
         setupViews()
     }
     
