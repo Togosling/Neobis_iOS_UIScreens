@@ -38,7 +38,7 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
         case 0: present(UIViewController(), animated: true)
         case 1: present(UIViewController(), animated: true)
         case 2: present(UIViewController(), animated: true)
-        case 3: present(UIViewController(), animated: true)
+        case 3: present(presentFullScreen(viewController: TravelCollectionViewController()), animated: true)
         default : present(presentFullScreen(viewController: SinglesTabBarController()), animated: true)
         }
     }

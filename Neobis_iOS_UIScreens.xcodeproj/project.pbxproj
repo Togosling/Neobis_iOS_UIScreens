@@ -21,6 +21,11 @@
 		DC50345329E2F5000047269E /* Serials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50345229E2F5000047269E /* Serials.swift */; };
 		DC50345729E313170047269E /* SinglesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50345629E313170047269E /* SinglesTabBarController.swift */; };
 		DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */; };
+		DC50348229E3DC4D0047269E /* TravelCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50348129E3DC4D0047269E /* TravelCollectionViewController.swift */; };
+		DC50348429E3DD800047269E /* TravelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50348329E3DD800047269E /* TravelCell.swift */; };
+		DC50348629E3DDA50047269E /* TravelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50348529E3DDA50047269E /* TravelHeader.swift */; };
+		DC50348829E3E71B0047269E /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */; };
+		DC50348A29E3E7960047269E /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50348929E3E7960047269E /* NotoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		DC50345229E2F5000047269E /* Serials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serials.swift; sourceTree = "<group>"; };
 		DC50345629E313170047269E /* SinglesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTabBarController.swift; sourceTree = "<group>"; };
 		DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Regular.ttf"; sourceTree = "<group>"; };
+		DC50348129E3DC4D0047269E /* TravelCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCollectionViewController.swift; sourceTree = "<group>"; };
+		DC50348329E3DD800047269E /* TravelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCell.swift; sourceTree = "<group>"; };
+		DC50348529E3DDA50047269E /* TravelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelHeader.swift; sourceTree = "<group>"; };
+		DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		DC50348929E3E7960047269E /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 			children = (
 				DC50344529E2B7BD0047269E /* MainViewCell.swift */,
 				DC50344C29E2D8780047269E /* Singles */,
+				DC50348029E3DC1A0047269E /* Travel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 			children = (
 				DC50343229E2A88E0047269E /* MainViewController.swift */,
 				DC50344729E2CD440047269E /* Singles */,
+				DC50347F29E3DC0D0047269E /* Travel */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,8 +168,27 @@
 			isa = PBXGroup;
 			children = (
 				DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */,
+				DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */,
+				DC50348929E3E7960047269E /* NotoSans-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DC50347F29E3DC0D0047269E /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				DC50348129E3DC4D0047269E /* TravelCollectionViewController.swift */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
+		DC50348029E3DC1A0047269E /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				DC50348329E3DD800047269E /* TravelCell.swift */,
+				DC50348529E3DDA50047269E /* TravelHeader.swift */,
+			);
+			path = Travel;
 			sourceTree = "<group>";
 		};
 		E5546DFD3960B0863C450E29 /* Frameworks */ = {
@@ -228,10 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC50348A29E3E7960047269E /* NotoSans-Regular.ttf in Resources */,
 				DC50343B29E2A8910047269E /* LaunchScreen.storyboard in Resources */,
 				DC50343829E2A8910047269E /* Assets.xcassets in Resources */,
 				DC50343629E2A88E0047269E /* Main.storyboard in Resources */,
 				DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */,
+				DC50348829E3E71B0047269E /* NotoSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC50345729E313170047269E /* SinglesTabBarController.swift in Sources */,
+				DC50348429E3DD800047269E /* TravelCell.swift in Sources */,
 				DC50344B29E2D8700047269E /* SinglesCollectionViewController.swift in Sources */,
 				DC50343329E2A88E0047269E /* MainViewController.swift in Sources */,
+				DC50348629E3DDA50047269E /* TravelHeader.swift in Sources */,
 				DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */,
 				DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */,
 				DC50345329E2F5000047269E /* Serials.swift in Sources */,
 				DC50344E29E2D9690047269E /* SinglesCollectionViewCell.swift in Sources */,
 				DC50342F29E2A88E0047269E /* AppDelegate.swift in Sources */,
+				DC50348229E3DC4D0047269E /* TravelCollectionViewController.swift in Sources */,
 				DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
