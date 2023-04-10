@@ -20,6 +20,7 @@
 		DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50344F29E2DA780047269E /* SinglesCollectionViewHeader.swift */; };
 		DC50345329E2F5000047269E /* Serials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50345229E2F5000047269E /* Serials.swift */; };
 		DC50345729E313170047269E /* SinglesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50345629E313170047269E /* SinglesTabBarController.swift */; };
+		DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DC50344F29E2DA780047269E /* SinglesCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesCollectionViewHeader.swift; sourceTree = "<group>"; };
 		DC50345229E2F5000047269E /* Serials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serials.swift; sourceTree = "<group>"; };
 		DC50345629E313170047269E /* SinglesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTabBarController.swift; sourceTree = "<group>"; };
+		DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				DC50345129E2F4EE0047269E /* Model */,
 				DC50344429E2B7AC0047269E /* Controller */,
 				DC50344329E2B7A60047269E /* View */,
+				DC50347829E3BA920047269E /* Fonts */,
 				DC50344229E2B7970047269E /* Delegate */,
 				DC50343429E2A88E0047269E /* Main.storyboard */,
 				DC50343729E2A8910047269E /* Assets.xcassets */,
@@ -126,8 +129,8 @@
 		DC50344729E2CD440047269E /* Singles */ = {
 			isa = PBXGroup;
 			children = (
-				DC50344A29E2D8700047269E /* SinglesCollectionViewController.swift */,
 				DC50345629E313170047269E /* SinglesTabBarController.swift */,
+				DC50344A29E2D8700047269E /* SinglesCollectionViewController.swift */,
 			);
 			path = Singles;
 			sourceTree = "<group>";
@@ -147,6 +150,14 @@
 				DC50345229E2F5000047269E /* Serials.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DC50347829E3BA920047269E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E5546DFD3960B0863C450E29 /* Frameworks */ = {
@@ -220,6 +231,7 @@
 				DC50343B29E2A8910047269E /* LaunchScreen.storyboard in Resources */,
 				DC50343829E2A8910047269E /* Assets.xcassets in Resources */,
 				DC50343629E2A88E0047269E /* Main.storyboard in Resources */,
+				DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

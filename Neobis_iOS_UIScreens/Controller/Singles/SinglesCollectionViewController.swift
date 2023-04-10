@@ -12,7 +12,7 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
     var items = [Serials(name: "SOS", description: "Mini meltdown? Get some\nHeadspace in a hurry", image: "Book"),
                  Serials(name: "One-the-Go", description: "Mindful living? Get your Headspace to go", image: "Bookshelf"),
                  Serials(name: "Classic", description: "Like it simple? Get some extra Headspace", image: "Diploma"),
-                 Serials(name: "SOS", description: "Mini meltdown? Get some\nHeadspace in a hurry", image: "Book")]
+                 Serials(name: "SOS", description: "Mini meltdown? Get some\nHeadspace in a hurry", image: "Globus")]
     
     let cellId = "cellId"
     let headerId = "headerID"
@@ -44,6 +44,11 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? SinglesCollectionViewCell else {return UICollectionViewCell()}
         cell.serials = items[indexPath.item]
+        if indexPath.item % 2 != 0 {
+            cell.imageAndLabelStackView.transform = CGAffineTransform(scaleX: -1, y: 1)
+            cell.imageView.transform = CGAffineTransform(scaleX: -1, y: 1)
+            cell.labelStackView.transform = CGAffineTransform(scaleX: -1, y: 1)
+        }
         return cell
     }
     

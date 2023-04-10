@@ -13,7 +13,7 @@ class SinglesCollectionViewHeader: UICollectionReusableView {
     let singlesLabel: UILabel = {
        let label = UILabel()
         label.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = .systemFont(ofSize: 22)
+        label.font = UIFont(name: "Segoe UI", size: 22)
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 0.97
         label.textAlignment = .center

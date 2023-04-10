@@ -9,9 +9,7 @@ import UIKit
 import SnapKit
 
 class SinglesCollectionViewCell: UICollectionViewCell {
-    
-    var textFirst = true
-    
+
     var serials: Serials? {
         didSet {
             let paragraphStyle = NSMutableParagraphStyle()
@@ -25,7 +23,7 @@ class SinglesCollectionViewCell: UICollectionViewCell {
     let namelabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = .systemFont(ofSize: 30)
+        label.font = UIFont(name: "Segoe UI", size: 30)
         label.textAlignment = .center
         return label
     }()
@@ -33,12 +31,14 @@ class SinglesCollectionViewCell: UICollectionViewCell {
     let descriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = .systemFont(ofSize: 16)
+        label.font = UIFont(name: "Segoe UI", size: 16)
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         return label
     }()
     
+    var labelStackView = UIStackView()
+            
     let imageView: UIImageView = {
         let iv = UIImageView()
         iv.snp.makeConstraints { make in
@@ -48,35 +48,42 @@ class SinglesCollectionViewCell: UICollectionViewCell {
         return iv
     }()
     
+    var imageAndLabelStackView = UIStackView()
+    
     let nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = .black
         button.setImage(UIImage(named: "right"), for: .normal)
         return button
     }()
-    
+        
     override init(frame: CGRect) {
         super .init(frame: frame)
         
         layer.borderWidth = 1
         layer.borderColor = UIColor(red: 0.854, green: 0.854, blue: 0.854, alpha: 1).cgColor
         
+        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.15).cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 1)
+        layer.shadowRadius = 10
+        layer.shadowOpacity = 1
+        layer.masksToBounds = false
+        
         setupViews()
     }
     
     fileprivate func setupViews() {
         
-        let labelStackView = UIStackView(arrangedSubviews: [namelabel, descriptionLabel])
+        labelStackView = UIStackView(arrangedSubviews: [namelabel, descriptionLabel])
         labelStackView.spacing = 4
         labelStackView.axis = .vertical
         labelStackView.alignment = .leading
         
-        var overallStackView = UIStackView()
+        imageAndLabelStackView = UIStackView(arrangedSubviews: [labelStackView,imageView])
+        imageAndLabelStackView.axis = .horizontal
+        imageAndLabelStackView.spacing = 16
         
-        
-        overallStackView = UIStackView(arrangedSubviews: [labelStackView, imageView, nextButton])
-        
-        
+        let overallStackView = UIStackView(arrangedSubviews: [imageAndLabelStackView, nextButton])
         overallStackView.axis = .horizontal
         overallStackView.spacing = 16
         
@@ -88,8 +95,6 @@ class SinglesCollectionViewCell: UICollectionViewCell {
         }
         
     }
-    
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
