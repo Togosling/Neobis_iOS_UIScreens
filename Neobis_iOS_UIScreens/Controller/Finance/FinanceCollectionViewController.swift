@@ -10,6 +10,7 @@ import UIKit
 class FinanceCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
+    let footerId = "footerId"
     
     let items = [Finance(imageName: "home_alt_fill", category: "Дом", money: "$321", spentOn: "Продукты", color: UIColor(red: 1, green: 0.766, blue: 0.158, alpha: 1)),
                  Finance(imageName: "tag", category: "Покупки", money: "$574", spentOn: "Одежда", color: UIColor(red: 0.236, green: 0, blue: 0.621, alpha: 1)),
@@ -27,24 +28,36 @@ class FinanceCollectionViewController: UICollectionViewController, UICollectionV
         collectionView.layer.cornerRadius = 31
         
         collectionView.register(FinanceCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(FinanceFooter.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: footerId)
+
         
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerId, for: indexPath) as? FinanceFooter else {return UICollectionReusableView()}
+        return footer
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return .init(width: view.frame.width, height: 100)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? FinanceCell else {return UICollectionViewCell()}
-        cell.nameLabel
-        cell.moneyLabel
-        cell.spentOnLabel
-        cell.imageView
+        cell.nameLabel.text = items[indexPath.item].category
+        cell.moneyLabel.text = items[indexPath.item].money
+        cell.spentOnLabel.text = items[indexPath.item].spentOn
+        cell.imageView.backgroundColor = items[indexPath.item].color
+        cell.imageView.image = UIImage(named: items[indexPath.item].imageName)
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: collectionView.frame.width, height: collectionView.frame.height / 7.7)
+        return .init(width: collectionView.frame.width, height: collectionView.frame.height / 10)
     }
     
     init() {

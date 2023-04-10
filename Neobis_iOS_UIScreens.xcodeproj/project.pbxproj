@@ -34,6 +34,16 @@
 		DC50349C29E4029B0047269E /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50349929E4029B0047269E /* Inter-Light.ttf */; };
 		DC50349D29E4029B0047269E /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50349A29E4029B0047269E /* Inter-Medium.ttf */; };
 		DC50349E29E4029B0047269E /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50349B29E4029B0047269E /* Inter-SemiBold.ttf */; };
+		DC5034A029E41B020047269E /* FinanceFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50349F29E41B020047269E /* FinanceFooter.swift */; };
+		DC5034A329E41D520047269E /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5034A129E41D520047269E /* Inter-Bold.ttf */; };
+		DC5034A429E41D520047269E /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5034A229E41D520047269E /* Inter-Regular.ttf */; };
+		DC5034A829E420A60047269E /* CryptoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034A729E420A60047269E /* CryptoTabBarController.swift */; };
+		DC5034AA29E421E20047269E /* CryptoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034A929E421E20047269E /* CryptoMainViewController.swift */; };
+		DC5034AC29E422360047269E /* CryptoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034AB29E422360047269E /* CryptoCollectionViewController.swift */; };
+		DC5034AE29E423420047269E /* SegoeUI-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5034AD29E423420047269E /* SegoeUI-Bold.ttf */; };
+		DC5034B029E438230047269E /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034AF29E438230047269E /* CryptoCell.swift */; };
+		DC5034B229E439080047269E /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034B129E439080047269E /* Crypto.swift */; };
+		DC5034B429E43C730047269E /* SegoeUI-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +78,16 @@
 		DC50349929E4029B0047269E /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		DC50349A29E4029B0047269E /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		DC50349B29E4029B0047269E /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC50349F29E41B020047269E /* FinanceFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceFooter.swift; sourceTree = "<group>"; };
+		DC5034A129E41D520047269E /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		DC5034A229E41D520047269E /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		DC5034A729E420A60047269E /* CryptoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTabBarController.swift; sourceTree = "<group>"; };
+		DC5034A929E421E20047269E /* CryptoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMainViewController.swift; sourceTree = "<group>"; };
+		DC5034AB29E422360047269E /* CryptoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewController.swift; sourceTree = "<group>"; };
+		DC5034AD29E423420047269E /* SegoeUI-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SegoeUI-Bold.ttf"; sourceTree = "<group>"; };
+		DC5034AF29E438230047269E /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		DC5034B129E439080047269E /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SegoeUI-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +161,7 @@
 				DC50344C29E2D8780047269E /* Singles */,
 				DC50348029E3DC1A0047269E /* Travel */,
 				DC50348C29E3F13A0047269E /* Finance */,
+				DC5034A629E420190047269E /* Crypto */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +173,7 @@
 				DC50344729E2CD440047269E /* Singles */,
 				DC50347F29E3DC0D0047269E /* Travel */,
 				DC50348B29E3F1340047269E /* Finance */,
+				DC5034A529E420000047269E /* Crypto */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +201,7 @@
 			children = (
 				DC50345229E2F5000047269E /* Serials.swift */,
 				DC50349729E3FAED0047269E /* Finance.swift */,
+				DC5034B129E439080047269E /* Crypto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,10 +209,14 @@
 		DC50347829E3BA920047269E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */,
+				DC5034A129E41D520047269E /* Inter-Bold.ttf */,
+				DC5034A229E41D520047269E /* Inter-Regular.ttf */,
 				DC50349929E4029B0047269E /* Inter-Light.ttf */,
 				DC50349A29E4029B0047269E /* Inter-Medium.ttf */,
 				DC50349B29E4029B0047269E /* Inter-SemiBold.ttf */,
 				DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */,
+				DC5034AD29E423420047269E /* SegoeUI-Bold.ttf */,
 				DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */,
 				DC50348929E3E7960047269E /* NotoSans-Regular.ttf */,
 			);
@@ -227,8 +254,27 @@
 			isa = PBXGroup;
 			children = (
 				DC50349129E3F7350047269E /* FinanceCell.swift */,
+				DC50349F29E41B020047269E /* FinanceFooter.swift */,
 			);
 			path = Finance;
+			sourceTree = "<group>";
+		};
+		DC5034A529E420000047269E /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DC5034A729E420A60047269E /* CryptoTabBarController.swift */,
+				DC5034A929E421E20047269E /* CryptoMainViewController.swift */,
+				DC5034AB29E422360047269E /* CryptoCollectionViewController.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		DC5034A629E420190047269E /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DC5034AF29E438230047269E /* CryptoCell.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		E5546DFD3960B0863C450E29 /* Frameworks */ = {
@@ -305,9 +351,13 @@
 				DC50349E29E4029B0047269E /* Inter-SemiBold.ttf in Resources */,
 				DC50343629E2A88E0047269E /* Main.storyboard in Resources */,
 				DC50349D29E4029B0047269E /* Inter-Medium.ttf in Resources */,
+				DC5034A329E41D520047269E /* Inter-Bold.ttf in Resources */,
 				DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */,
+				DC5034B429E43C730047269E /* SegoeUI-Semibold.ttf in Resources */,
+				DC5034A429E41D520047269E /* Inter-Regular.ttf in Resources */,
 				DC50348829E3E71B0047269E /* NotoSans-Medium.ttf in Resources */,
 				DC50349C29E4029B0047269E /* Inter-Light.ttf in Resources */,
+				DC5034AE29E423420047269E /* SegoeUI-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,16 +413,22 @@
 				DC50345729E313170047269E /* SinglesTabBarController.swift in Sources */,
 				DC50348429E3DD800047269E /* TravelCell.swift in Sources */,
 				DC50344B29E2D8700047269E /* SinglesCollectionViewController.swift in Sources */,
+				DC5034AC29E422360047269E /* CryptoCollectionViewController.swift in Sources */,
 				DC50343329E2A88E0047269E /* MainViewController.swift in Sources */,
 				DC50348629E3DDA50047269E /* TravelHeader.swift in Sources */,
 				DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */,
+				DC5034A829E420A60047269E /* CryptoTabBarController.swift in Sources */,
 				DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */,
+				DC5034B029E438230047269E /* CryptoCell.swift in Sources */,
 				DC50349829E3FAED0047269E /* Finance.swift in Sources */,
 				DC50345329E2F5000047269E /* Serials.swift in Sources */,
+				DC5034AA29E421E20047269E /* CryptoMainViewController.swift in Sources */,
+				DC5034B229E439080047269E /* Crypto.swift in Sources */,
 				DC50344E29E2D9690047269E /* SinglesCollectionViewCell.swift in Sources */,
 				DC50342F29E2A88E0047269E /* AppDelegate.swift in Sources */,
 				DC50348229E3DC4D0047269E /* TravelCollectionViewController.swift in Sources */,
 				DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */,
+				DC5034A029E41B020047269E /* FinanceFooter.swift in Sources */,
 				DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */,
 				DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */,
 				DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */,

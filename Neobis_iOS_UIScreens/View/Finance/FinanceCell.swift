@@ -18,9 +18,7 @@ class FinanceCell: UICollectionViewCell {
             make.height.equalTo(30)
         }
         iv.layer.cornerRadius = 15
-//        iv.clipsToBounds = true
-//        iv.layer.masksToBounds = true
-//        iv.contentMode = .scaleAspectFill
+        iv.contentMode = .center
         return iv
     }()
     

@@ -11,6 +11,10 @@
 		<string>Inter-Light.ttf</string>
 		<string>Inter-Medium.ttf</string>
 		<string>Inter-SemiBold.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>SegoeUI-Bold.ttf</string>
+		<string>SegoeUI-Semibold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
