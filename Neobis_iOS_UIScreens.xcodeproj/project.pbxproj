@@ -26,6 +26,14 @@
 		DC50348629E3DDA50047269E /* TravelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50348529E3DDA50047269E /* TravelHeader.swift */; };
 		DC50348829E3E71B0047269E /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */; };
 		DC50348A29E3E7960047269E /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50348929E3E7960047269E /* NotoSans-Regular.ttf */; };
+		DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50348D29E3F3610047269E /* FinanceTabBarController.swift */; };
+		DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50348F29E3F64F0047269E /* FinanceCollectionViewController.swift */; };
+		DC50349229E3F7350047269E /* FinanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50349129E3F7350047269E /* FinanceCell.swift */; };
+		DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50349529E3F8280047269E /* FInanceViewController.swift */; };
+		DC50349829E3FAED0047269E /* Finance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50349729E3FAED0047269E /* Finance.swift */; };
+		DC50349C29E4029B0047269E /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50349929E4029B0047269E /* Inter-Light.ttf */; };
+		DC50349D29E4029B0047269E /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50349A29E4029B0047269E /* Inter-Medium.ttf */; };
+		DC50349E29E4029B0047269E /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC50349B29E4029B0047269E /* Inter-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,14 @@
 		DC50348529E3DDA50047269E /* TravelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelHeader.swift; sourceTree = "<group>"; };
 		DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		DC50348929E3E7960047269E /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		DC50348D29E3F3610047269E /* FinanceTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTabBarController.swift; sourceTree = "<group>"; };
+		DC50348F29E3F64F0047269E /* FinanceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCollectionViewController.swift; sourceTree = "<group>"; };
+		DC50349129E3F7350047269E /* FinanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCell.swift; sourceTree = "<group>"; };
+		DC50349529E3F8280047269E /* FInanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FInanceViewController.swift; sourceTree = "<group>"; };
+		DC50349729E3FAED0047269E /* Finance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance.swift; sourceTree = "<group>"; };
+		DC50349929E4029B0047269E /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		DC50349A29E4029B0047269E /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		DC50349B29E4029B0047269E /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +140,7 @@
 				DC50344529E2B7BD0047269E /* MainViewCell.swift */,
 				DC50344C29E2D8780047269E /* Singles */,
 				DC50348029E3DC1A0047269E /* Travel */,
+				DC50348C29E3F13A0047269E /* Finance */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,6 +151,7 @@
 				DC50343229E2A88E0047269E /* MainViewController.swift */,
 				DC50344729E2CD440047269E /* Singles */,
 				DC50347F29E3DC0D0047269E /* Travel */,
+				DC50348B29E3F1340047269E /* Finance */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				DC50345229E2F5000047269E /* Serials.swift */,
+				DC50349729E3FAED0047269E /* Finance.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +186,9 @@
 		DC50347829E3BA920047269E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DC50349929E4029B0047269E /* Inter-Light.ttf */,
+				DC50349A29E4029B0047269E /* Inter-Medium.ttf */,
+				DC50349B29E4029B0047269E /* Inter-SemiBold.ttf */,
 				DC50347D29E3BE220047269E /* Segoe UI Regular.ttf */,
 				DC50348729E3E71B0047269E /* NotoSans-Medium.ttf */,
 				DC50348929E3E7960047269E /* NotoSans-Regular.ttf */,
@@ -189,6 +211,24 @@
 				DC50348529E3DDA50047269E /* TravelHeader.swift */,
 			);
 			path = Travel;
+			sourceTree = "<group>";
+		};
+		DC50348B29E3F1340047269E /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				DC50348D29E3F3610047269E /* FinanceTabBarController.swift */,
+				DC50349529E3F8280047269E /* FInanceViewController.swift */,
+				DC50348F29E3F64F0047269E /* FinanceCollectionViewController.swift */,
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		DC50348C29E3F13A0047269E /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				DC50349129E3F7350047269E /* FinanceCell.swift */,
+			);
+			path = Finance;
 			sourceTree = "<group>";
 		};
 		E5546DFD3960B0863C450E29 /* Frameworks */ = {
@@ -262,9 +302,12 @@
 				DC50348A29E3E7960047269E /* NotoSans-Regular.ttf in Resources */,
 				DC50343B29E2A8910047269E /* LaunchScreen.storyboard in Resources */,
 				DC50343829E2A8910047269E /* Assets.xcassets in Resources */,
+				DC50349E29E4029B0047269E /* Inter-SemiBold.ttf in Resources */,
 				DC50343629E2A88E0047269E /* Main.storyboard in Resources */,
+				DC50349D29E4029B0047269E /* Inter-Medium.ttf in Resources */,
 				DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */,
 				DC50348829E3E71B0047269E /* NotoSans-Medium.ttf in Resources */,
+				DC50349C29E4029B0047269E /* Inter-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +367,16 @@
 				DC50348629E3DDA50047269E /* TravelHeader.swift in Sources */,
 				DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */,
 				DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */,
+				DC50349829E3FAED0047269E /* Finance.swift in Sources */,
 				DC50345329E2F5000047269E /* Serials.swift in Sources */,
 				DC50344E29E2D9690047269E /* SinglesCollectionViewCell.swift in Sources */,
 				DC50342F29E2A88E0047269E /* AppDelegate.swift in Sources */,
 				DC50348229E3DC4D0047269E /* TravelCollectionViewController.swift in Sources */,
 				DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */,
+				DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */,
+				DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */,
+				DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */,
+				DC50349229E3F7350047269E /* FinanceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

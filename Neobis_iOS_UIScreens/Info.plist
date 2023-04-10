@@ -8,6 +8,9 @@
 		<string>Segoe UI Regular.ttf</string>
 		<string>NotoSans-Medium.ttf</string>
 		<string>NotoSans-Regular.ttf</string>
+		<string>Inter-Light.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
