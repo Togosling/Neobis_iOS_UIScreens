@@ -23,19 +23,25 @@ class WeatherMiddleCollectionViewController: UICollectionViewController, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = UIColor(red: 71/255, green: 184/255, blue: 227/255, alpha: 1)
+        collectionView.backgroundColor = .clear
         collectionView.register(WeatherMiddleCell.self, forCellWithReuseIdentifier: cellId)
         
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
                 layout.scrollDirection = .horizontal
             }
-        
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? WeatherMiddleCell else {return UICollectionViewCell()}
         cell.dateLabel.text = items[indexPath.item].date
         cell.tempLabel.text = items[indexPath.item].temp
         cell.imageView.image = UIImage(named: items[indexPath.item].image)
+        
+        if indexPath.item == 2 {
+            cell.contentView.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.3).cgColor
+            cell.contentView.layer.cornerRadius = 20
+            cell.contentView.layer.borderColor = UIColor(red: 186/255, green: 209/255, blue: 228/255, alpha: 1).cgColor
+            cell.contentView.layer.borderWidth = 2
+        }
         return cell
     }
     

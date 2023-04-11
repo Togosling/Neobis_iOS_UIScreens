@@ -23,11 +23,12 @@ class WeatherBottomCollectionViewController: UICollectionViewController, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = UIColor(red: 71/255, green: 184/255, blue: 227/255, alpha: 1)
+        collectionView.backgroundColor = .clear
         collectionView.register(WeatherBottomCell.self, forCellWithReuseIdentifier: cellId)
         
         collectionView.showsVerticalScrollIndicator = true
         collectionView.indicatorStyle = .white
+        collectionView.alwaysBounceVertical = true
 
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

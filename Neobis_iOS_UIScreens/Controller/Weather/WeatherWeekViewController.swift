@@ -10,6 +10,18 @@ import SnapKit
 
 class WeatherWeekViewController: UIViewController {
     
+    let leftImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "Vector 12")
+        return iv
+    }()
+    
+    let rightImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "Vector 11")
+        return iv
+    }()
+    
     var backButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "left"), for: .normal)
@@ -92,8 +104,26 @@ class WeatherWeekViewController: UIViewController {
         view.backgroundColor = UIColor(red: 71/255, green: 184/255, blue: 227/255, alpha: 1)
 
         setupViews()
+        gradient()
         
         backButton.addTarget(self, action: #selector(handleBack), for: .touchUpInside)
+    }
+    
+    func gradient() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        gradientLayer.colors = [UIColor(red: 70/255, green: 188/255, blue: 225/255, alpha: 1).cgColor,UIColor(red: 73/255, green: 173/255, blue: 236/255, alpha: 1).cgColor,UIColor(red: 74/255, green: 153/255, blue: 249/255, alpha: 1).cgColor]
+        gradientLayer.locations = [0.0, 0.5, 1.0]
+        
+        let animation = CABasicAnimation(keyPath: "colors")
+        animation.fromValue = [UIColor(red: 70/255, green: 188/255, blue: 225/255, alpha: 1).cgColor,UIColor(red: 73/255, green: 173/255, blue: 236/255, alpha: 1).cgColor,UIColor(red: 74/255, green: 153/255, blue: 249/255, alpha: 1).cgColor]
+        animation.toValue = [UIColor(red: 74/255, green: 153/255, blue: 249/255, alpha: 1).cgColor,UIColor(red: 73/255, green: 173/255, blue: 236/255, alpha: 1).cgColor,UIColor(red: 70/255, green: 188/255, blue: 225/255, alpha: 1).cgColor]
+        animation.duration = 3.0
+        animation.autoreverses = true
+        animation.repeatCount = .infinity
+        gradientLayer.add(animation, forKey: nil)
     }
     
     @objc func handleBack() {
@@ -101,6 +131,18 @@ class WeatherWeekViewController: UIViewController {
     }
     
     fileprivate func setupViews() {
+        
+        view.addSubview(leftImageView)
+        leftImageView.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalToSuperview().offset(100)
+        }
+        
+        view.addSubview(rightImageView)
+        rightImageView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(-30)
+            make.trailing.equalToSuperview().offset(50)
+        }
         
         view.addSubview(backButton)
         backButton.snp.makeConstraints { make in
