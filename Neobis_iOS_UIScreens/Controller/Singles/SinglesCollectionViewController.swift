@@ -20,7 +20,7 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         collectionView.register(SinglesCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(SinglesCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     
@@ -49,6 +49,16 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
             cell.imageView.transform = CGAffineTransform(scaleX: -1, y: 1)
             cell.labelStackView.transform = CGAffineTransform(scaleX: -1, y: 1)
         }
+        
+//        cell.layer.borderWidth = 1
+//        cell.layer.borderColor = UIColor(red: 0.854, green: 0.854, blue: 0.854, alpha: 1).cgColor
+//        
+//        cell.layer.shadowColor = UIColor.red.cgColor
+//        cell.layer.shadowOffset = CGSize(width: 0, height: 1)
+//        cell.layer.shadowRadius = 10
+//        cell.layer.shadowOpacity = 1
+//        cell.layer.masksToBounds = true
+//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: 0).cgPath
         return cell
     }
     

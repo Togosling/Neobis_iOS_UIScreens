@@ -41,18 +41,8 @@ class TravelHeader: UICollectionReusableView {
     let searchBar: UISearchBar = {
         let search = UISearchBar()
         search.searchBarStyle = .minimal
-        search.layer.cornerRadius = 5
         search.placeholder = "Куда хотите поехать?"
         search.searchTextField.font = UIFont(name: "NotoSans-Regular", size: 12)
-        
-//        search.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-//        search.layer.shadowRadius = 3
-//        search.layer.shadowOffset = CGSize(width: 0, height: 1)
-//        search.layer.opacity = 1
-//        search.layer.shadowPath = UIBezierPath(roundedRect: search.bounds, cornerRadius: 5).cgPath
-//        search.layer.masksToBounds = true
-        
-
         return search
     }()
 

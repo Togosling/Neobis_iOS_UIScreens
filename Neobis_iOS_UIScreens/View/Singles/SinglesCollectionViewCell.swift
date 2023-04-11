@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 
+
 class SinglesCollectionViewCell: UICollectionViewCell {
 
     var serials: Serials? {
@@ -60,11 +61,36 @@ class SinglesCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super .init(frame: frame)
 
+        setupShadow()
+        setupViews()
+        
+    }
+    
+    fileprivate func setupShadow() {
+        layer.shadowRadius = 10
 
+        // How far the shadow is offset from the cell's frame
+        layer.shadowOffset = CGSize(width: 0, height: 1)
+
+        // The transparency of the shadow. Ranging from 0.0 (transparent) to 1.0 (opaque).
+        layer.shadowOpacity = 1
+
+        // The default color is black
+        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.15).cgColor
+        
         layer.borderWidth = 1
         layer.borderColor = UIColor(red: 0.854, green: 0.854, blue: 0.854, alpha: 1).cgColor
-      
-        setupViews()
+        
+        // To avoid the shadow to be clipped to the corner radius
+//        layer.cornerRaduis = cornerRadius
+        layer.masksToBounds = false
+        
+        contentView.layer.cornerRadius = 0
+        contentView.layer.masksToBounds = true
+        contentView.backgroundColor = .secondarySystemGroupedBackground
+        
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: 0).cgPath
+        
     }
     
     fileprivate func setupViews() {
