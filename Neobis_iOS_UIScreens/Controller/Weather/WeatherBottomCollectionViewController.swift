@@ -12,7 +12,7 @@ class WeatherBottomCollectionViewController: UICollectionViewController, UIColle
     
     let cellId = "cellId"
     
-    var items = [Weather(temp: "21°C", image: "Гроза", date: "Апр,27"),
+    var items = [Weather(temp: "21°C", image: "Дождь", date: "Апр,27"),
                  Weather(temp: "22°C", image: "Дождь", date: "Апр,28"),
                  Weather(temp: "34°C", image: "Sunny", date: "Апр,29"),
                  Weather(temp: "34°C", image: "Sunny", date: "Апр,30"),

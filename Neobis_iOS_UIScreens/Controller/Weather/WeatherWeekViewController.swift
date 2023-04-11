@@ -135,19 +135,19 @@ class WeatherWeekViewController: UIViewController {
         view.addSubview(leftImageView)
         leftImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
-            make.top.equalToSuperview().offset(100)
+            make.top.equalToSuperview().offset(view.frame.height / 9.26)
         }
         
         view.addSubview(rightImageView)
         rightImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(-30)
-            make.trailing.equalToSuperview().offset(50)
+            make.top.equalToSuperview().offset(-(view.frame.height / 30.8))
+            make.trailing.equalToSuperview().offset(view.frame.height / 18.52)
         }
         
         view.addSubview(backButton)
         backButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(70)
-            make.leading.equalToSuperview().offset(35)
+            make.top.equalToSuperview().offset(view.frame.height / 13.2)
+            make.leading.equalToSuperview().offset(view.frame.height / 26.4)
         }
         
         view.addSubview(backLabel)
@@ -159,11 +159,11 @@ class WeatherWeekViewController: UIViewController {
         view.addSubview(settingsButton)
         settingsButton.snp.makeConstraints { make in
             make.top.equalTo(backButton.snp.top).offset(2)
-            make.trailing.equalToSuperview().offset(-35)
+            make.trailing.equalToSuperview().offset(-(view.frame.height / 26.4))
         }
         view.addSubview(todayLabel)
         todayLabel.snp.makeConstraints { make in
-            make.top.equalTo(backLabel.snp.bottom).offset(50)
+            make.top.equalTo(backLabel.snp.bottom).offset(view.frame.height / 18.52)
             make.leading.equalTo(backButton.snp.leading)
         }
         view.addSubview(dateLabel)
@@ -174,13 +174,13 @@ class WeatherWeekViewController: UIViewController {
         
         view.addSubview(middleCollectionViewController.collectionView)
         middleCollectionViewController.collectionView.snp.makeConstraints { make in
-            make.top.equalTo(todayLabel.snp.bottom).offset(20)
+            make.top.equalTo(todayLabel.snp.bottom).offset(view.frame.height / 46.3)
             make.width.equalTo(view.frame.width)
             make.height.equalTo(view.frame.height / 5)
         }
         view.addSubview(thisWeekLabel)
         thisWeekLabel.snp.makeConstraints { make in
-            make.top.equalTo(middleCollectionViewController.collectionView.snp.bottom).offset(20)
+            make.top.equalTo(middleCollectionViewController.collectionView.snp.bottom).offset(view.frame.height / 46.3)
             make.leading.equalTo(todayLabel.snp.leading)
         }
         view.addSubview(calendarImageView)
@@ -190,20 +190,24 @@ class WeatherWeekViewController: UIViewController {
         }
         view.addSubview(bottomCollectionViewController.collectionView)
         bottomCollectionViewController.collectionView.snp.makeConstraints { make in
-            make.top.equalTo(thisWeekLabel.snp.bottom).offset(20)
+            make.top.equalTo(thisWeekLabel.snp.bottom).offset(view.frame.height / 46.3)
             make.width.equalTo(view.frame.width)
             make.height.equalTo(view.frame.height / 2.3)
         }
-        view.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-25)
-            make.trailing.equalToSuperview().offset(-130)
+        
+        if view.frame.height > 700 {
+            view.addSubview(titleLabel)
+            titleLabel.snp.makeConstraints { make in
+                make.bottom.equalToSuperview().offset(-25)
+                make.trailing.equalToSuperview().offset(-130)
+            }
+            view.addSubview(titleImageView)
+            titleImageView.snp.makeConstraints { make in
+                make.bottom.equalTo(titleLabel.snp.bottom).offset(-3)
+                make.trailing.equalTo(titleLabel.snp.leading).offset(-10)
+            }
         }
-        view.addSubview(titleImageView)
-        titleImageView.snp.makeConstraints { make in
-            make.bottom.equalTo(titleLabel.snp.bottom).offset(-3)
-            make.trailing.equalTo(titleLabel.snp.leading).offset(-10)
-        }
+
     }
 }
 

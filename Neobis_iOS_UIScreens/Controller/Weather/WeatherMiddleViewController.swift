@@ -151,53 +151,58 @@ class WeatherMiddleViewController: UIViewController {
             make.centerX.equalToSuperview()
         }
         
-        view.addSubview(windImageView)
-        windImageView.snp.makeConstraints { make in
-            make.top.equalTo(weatherConditionLabel.snp.bottom).offset(30)
-            make.leading.equalToSuperview().offset(70)
+        if view.frame.height > 700 {
+            
+            view.addSubview(windImageView)
+            windImageView.snp.makeConstraints { make in
+                make.top.equalTo(weatherConditionLabel.snp.bottom).offset(30)
+                make.leading.equalToSuperview().offset(70)
+            }
+            
+            view.addSubview(rainImageView)
+            rainImageView.snp.makeConstraints { make in
+                make.top.equalTo(windImageView.snp.bottom).offset(30)
+                make.leading.equalToSuperview().offset(70)
+            }
+            
+            view.addSubview(windLabel)
+            windLabel.snp.makeConstraints { make in
+                make.top.equalTo(windImageView.snp.top)
+                make.leading.equalTo(windImageView.snp.trailing).offset(20)
+            }
+            
+            view.addSubview(rainLabel)
+            rainLabel.snp.makeConstraints { make in
+                make.top.equalTo(rainImageView.snp.top)
+                make.leading.equalTo(rainImageView.snp.trailing).offset(20)
+            }
+            
+            view.addSubview(separatorLabel)
+            separatorLabel.snp.makeConstraints { make in
+                make.centerX.equalToSuperview()
+                make.top.equalTo(windImageView.snp.top)
+            }
+            
+            view.addSubview(separatorLabel2)
+            separatorLabel2.snp.makeConstraints { make in
+                make.centerX.equalToSuperview()
+                make.top.equalTo(rainImageView.snp.top)
+            }
+            
+            view.addSubview(windSpeedLabel)
+            windSpeedLabel.snp.makeConstraints { make in
+                make.top.equalTo(windImageView.snp.top)
+                make.leading.equalTo(separatorLabel.snp.trailing).offset(20)
+            }
+            
+            view.addSubview(rainSpeedLabel)
+            rainSpeedLabel.snp.makeConstraints { make in
+                make.top.equalTo(rainImageView.snp.top)
+                make.leading.equalTo(separatorLabel2.snp.trailing).offset(20)
+            }
+            
         }
-        
-        view.addSubview(rainImageView)
-        rainImageView.snp.makeConstraints { make in
-            make.top.equalTo(windImageView.snp.bottom).offset(30)
-            make.leading.equalToSuperview().offset(70)
-        }
-        
-        view.addSubview(windLabel)
-        windLabel.snp.makeConstraints { make in
-            make.top.equalTo(windImageView.snp.top)
-            make.leading.equalTo(windImageView.snp.trailing).offset(20)
-        }
-        
-        view.addSubview(rainLabel)
-        rainLabel.snp.makeConstraints { make in
-            make.top.equalTo(rainImageView.snp.top)
-            make.leading.equalTo(rainImageView.snp.trailing).offset(20)
-        }
-        
-        view.addSubview(separatorLabel)
-        separatorLabel.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(windImageView.snp.top)
-        }
-        
-        view.addSubview(separatorLabel2)
-        separatorLabel2.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(rainImageView.snp.top)
-        }
-        
-        view.addSubview(windSpeedLabel)
-        windSpeedLabel.snp.makeConstraints { make in
-            make.top.equalTo(windImageView.snp.top)
-            make.leading.equalTo(separatorLabel.snp.trailing).offset(20)
-        }
-        
-        view.addSubview(rainSpeedLabel)
-        rainSpeedLabel.snp.makeConstraints { make in
-            make.top.equalTo(rainImageView.snp.top)
-            make.leading.equalTo(separatorLabel2.snp.trailing).offset(20)
-        }
+
         
     }
 }

@@ -149,11 +149,19 @@ class WeatherMainViewController: UIViewController {
             make.trailing.equalToSuperview().offset(-(view.frame.height / 26.4))
         }
         
-        view.addSubview(sunBackImageView)
-        sunBackImageView.snp.makeConstraints { make in
-            make.top.equalTo(locationLabel.snp.bottom).offset(view.frame.height / 18.52)
-            make.centerX.equalToSuperview()
+        if view.frame.height < 700 {
+            view.addSubview(sunBackImageView)
+            sunBackImageView.snp.makeConstraints { make in
+                make.centerX.equalToSuperview()
+            }
+        } else {
+            view.addSubview(sunBackImageView)
+            sunBackImageView.snp.makeConstraints { make in
+                make.top.equalTo(locationLabel.snp.bottom).offset(view.frame.height / 18.52)
+                make.centerX.equalToSuperview()
+            }
         }
+
         view.addSubview(sunImageView)
         sunImageView.snp.makeConstraints { make in
             make.center.equalTo(sunBackImageView.snp.center)
