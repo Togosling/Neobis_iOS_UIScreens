@@ -35,7 +35,7 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         switch indexPath.item {
-        case 0: present(UIViewController(), animated: true)
+        case 0: present(presentFullScreen(viewController: WeatherMainViewController()), animated: true)
         case 1: present(presentFullScreen(viewController: CryptoTabBarController()), animated: true)
         case 2: present(presentFullScreen(viewController: FinanceTabBarController()), animated: true)
         case 3: present(presentFullScreen(viewController: TravelCollectionViewController()), animated: true)

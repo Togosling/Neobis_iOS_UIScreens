@@ -15,6 +15,10 @@
 		<string>Inter-Regular.ttf</string>
 		<string>SegoeUI-Bold.ttf</string>
 		<string>SegoeUI-Semibold.ttf</string>
+		<string>Overpass-Bold.ttf</string>
+		<string>Overpass-Regular.ttf</string>
+		<string>Raleway-Light.ttf</string>
+		<string>Overpass-SemiBold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

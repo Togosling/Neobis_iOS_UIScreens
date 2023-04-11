@@ -45,6 +45,15 @@
 		DC5034B229E439080047269E /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034B129E439080047269E /* Crypto.swift */; };
 		DC5034B429E43C730047269E /* SegoeUI-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */; };
 		DCB34D3029E4EC5E0051FF6C /* WeatherMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D2F29E4EC5E0051FF6C /* WeatherMainViewController.swift */; };
+		DCB34D3429E524520051FF6C /* Overpass-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB34D3329E524520051FF6C /* Overpass-Bold.ttf */; };
+		DCB34D3729E52E850051FF6C /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D3629E52E850051FF6C /* Shadow.swift */; };
+		DCB34D3929E52F2E0051FF6C /* WeatherMiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D3829E52F2E0051FF6C /* WeatherMiddleViewController.swift */; };
+		DCB34D3B29E532BE0051FF6C /* Overpass-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB34D3A29E532BE0051FF6C /* Overpass-Regular.ttf */; };
+		DCB34D3D29E53C7E0051FF6C /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB34D3C29E53C7E0051FF6C /* Raleway-Light.ttf */; };
+		DCB34D3F29E553AB0051FF6C /* WeatherWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D3E29E553AB0051FF6C /* WeatherWeekViewController.swift */; };
+		DCB34D4129E557CD0051FF6C /* Overpass-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB34D4029E557CD0051FF6C /* Overpass-SemiBold.ttf */; };
+		DCB34D4329E562510051FF6C /* WeatherMiddleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4229E562510051FF6C /* WeatherMiddleCollectionViewController.swift */; };
+		DCB34D4529E5650B0051FF6C /* WeatherBottomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4429E5650A0051FF6C /* WeatherBottomCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +99,15 @@
 		DC5034B129E439080047269E /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SegoeUI-Semibold.ttf"; sourceTree = "<group>"; };
 		DCB34D2F29E4EC5E0051FF6C /* WeatherMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainViewController.swift; sourceTree = "<group>"; };
+		DCB34D3329E524520051FF6C /* Overpass-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Bold.ttf"; sourceTree = "<group>"; };
+		DCB34D3629E52E850051FF6C /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		DCB34D3829E52F2E0051FF6C /* WeatherMiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiddleViewController.swift; sourceTree = "<group>"; };
+		DCB34D3A29E532BE0051FF6C /* Overpass-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		DCB34D3C29E53C7E0051FF6C /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		DCB34D3E29E553AB0051FF6C /* WeatherWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekViewController.swift; sourceTree = "<group>"; };
+		DCB34D4029E557CD0051FF6C /* Overpass-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBold.ttf"; sourceTree = "<group>"; };
+		DCB34D4229E562510051FF6C /* WeatherMiddleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiddleCollectionViewController.swift; sourceTree = "<group>"; };
+		DCB34D4429E5650A0051FF6C /* WeatherBottomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBottomCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +155,7 @@
 				DC50345129E2F4EE0047269E /* Model */,
 				DC50344429E2B7AC0047269E /* Controller */,
 				DC50344329E2B7A60047269E /* View */,
+				DCB34D3529E52E740051FF6C /* Helper */,
 				DC50347829E3BA920047269E /* Fonts */,
 				DC50344229E2B7970047269E /* Delegate */,
 				DC50343429E2A88E0047269E /* Main.storyboard */,
@@ -213,6 +232,10 @@
 		DC50347829E3BA920047269E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DCB34D3C29E53C7E0051FF6C /* Raleway-Light.ttf */,
+				DCB34D4029E557CD0051FF6C /* Overpass-SemiBold.ttf */,
+				DCB34D3329E524520051FF6C /* Overpass-Bold.ttf */,
+				DCB34D3A29E532BE0051FF6C /* Overpass-Regular.ttf */,
 				DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */,
 				DC5034A129E41D520047269E /* Inter-Bold.ttf */,
 				DC5034A229E41D520047269E /* Inter-Regular.ttf */,
@@ -285,6 +308,10 @@
 			isa = PBXGroup;
 			children = (
 				DCB34D2F29E4EC5E0051FF6C /* WeatherMainViewController.swift */,
+				DCB34D3829E52F2E0051FF6C /* WeatherMiddleViewController.swift */,
+				DCB34D3E29E553AB0051FF6C /* WeatherWeekViewController.swift */,
+				DCB34D4229E562510051FF6C /* WeatherMiddleCollectionViewController.swift */,
+				DCB34D4429E5650A0051FF6C /* WeatherBottomCollectionViewController.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -294,6 +321,14 @@
 			children = (
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		DCB34D3529E52E740051FF6C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DCB34D3629E52E850051FF6C /* Shadow.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		E5546DFD3960B0863C450E29 /* Frameworks */ = {
@@ -364,19 +399,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB34D3B29E532BE0051FF6C /* Overpass-Regular.ttf in Resources */,
 				DC50348A29E3E7960047269E /* NotoSans-Regular.ttf in Resources */,
 				DC50343B29E2A8910047269E /* LaunchScreen.storyboard in Resources */,
 				DC50343829E2A8910047269E /* Assets.xcassets in Resources */,
 				DC50349E29E4029B0047269E /* Inter-SemiBold.ttf in Resources */,
 				DC50343629E2A88E0047269E /* Main.storyboard in Resources */,
 				DC50349D29E4029B0047269E /* Inter-Medium.ttf in Resources */,
+				DCB34D3D29E53C7E0051FF6C /* Raleway-Light.ttf in Resources */,
 				DC5034A329E41D520047269E /* Inter-Bold.ttf in Resources */,
 				DC50347E29E3BE220047269E /* Segoe UI Regular.ttf in Resources */,
 				DC5034B429E43C730047269E /* SegoeUI-Semibold.ttf in Resources */,
 				DC5034A429E41D520047269E /* Inter-Regular.ttf in Resources */,
+				DCB34D3429E524520051FF6C /* Overpass-Bold.ttf in Resources */,
 				DC50348829E3E71B0047269E /* NotoSans-Medium.ttf in Resources */,
 				DC50349C29E4029B0047269E /* Inter-Light.ttf in Resources */,
 				DC5034AE29E423420047269E /* SegoeUI-Bold.ttf in Resources */,
+				DCB34D4129E557CD0051FF6C /* Overpass-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +480,10 @@
 				DC5034B029E438230047269E /* CryptoCell.swift in Sources */,
 				DC50349829E3FAED0047269E /* Finance.swift in Sources */,
 				DC50345329E2F5000047269E /* Serials.swift in Sources */,
+				DCB34D4529E5650B0051FF6C /* WeatherBottomCollectionViewController.swift in Sources */,
+				DCB34D4329E562510051FF6C /* WeatherMiddleCollectionViewController.swift in Sources */,
+				DCB34D3F29E553AB0051FF6C /* WeatherWeekViewController.swift in Sources */,
+				DCB34D3729E52E850051FF6C /* Shadow.swift in Sources */,
 				DC5034AA29E421E20047269E /* CryptoMainViewController.swift in Sources */,
 				DC5034B229E439080047269E /* Crypto.swift in Sources */,
 				DC50344E29E2D9690047269E /* SinglesCollectionViewCell.swift in Sources */,
@@ -450,6 +493,7 @@
 				DC5034A029E41B020047269E /* FinanceFooter.swift in Sources */,
 				DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */,
 				DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */,
+				DCB34D3929E52F2E0051FF6C /* WeatherMiddleViewController.swift in Sources */,
 				DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */,
 				DCB34D3029E4EC5E0051FF6C /* WeatherMainViewController.swift in Sources */,
 				DC50349229E3F7350047269E /* FinanceCell.swift in Sources */,
