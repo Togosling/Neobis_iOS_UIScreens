@@ -18,6 +18,8 @@ class TravelCollectionViewController: UICollectionViewController, UICollectionVi
         collectionView.register(TravelCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(TravelHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         
+        
+                
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

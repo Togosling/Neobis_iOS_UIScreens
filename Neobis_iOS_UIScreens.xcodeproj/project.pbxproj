@@ -44,6 +44,7 @@
 		DC5034B029E438230047269E /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034AF29E438230047269E /* CryptoCell.swift */; };
 		DC5034B229E439080047269E /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5034B129E439080047269E /* Crypto.swift */; };
 		DC5034B429E43C730047269E /* SegoeUI-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */; };
+		DCB34D3029E4EC5E0051FF6C /* WeatherMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D2F29E4EC5E0051FF6C /* WeatherMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		DC5034AF29E438230047269E /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
 		DC5034B129E439080047269E /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		DC5034B329E43C730047269E /* SegoeUI-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SegoeUI-Semibold.ttf"; sourceTree = "<group>"; };
+		DCB34D2F29E4EC5E0051FF6C /* WeatherMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				DC50348029E3DC1A0047269E /* Travel */,
 				DC50348C29E3F13A0047269E /* Finance */,
 				DC5034A629E420190047269E /* Crypto */,
+				DCB34D2E29E4EC200051FF6C /* Weather */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				DC50347F29E3DC0D0047269E /* Travel */,
 				DC50348B29E3F1340047269E /* Finance */,
 				DC5034A529E420000047269E /* Crypto */,
+				DCB34D2D29E4EC190051FF6C /* Weather */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +279,21 @@
 				DC5034AF29E438230047269E /* CryptoCell.swift */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		DCB34D2D29E4EC190051FF6C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DCB34D2F29E4EC5E0051FF6C /* WeatherMainViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		DCB34D2E29E4EC200051FF6C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		E5546DFD3960B0863C450E29 /* Frameworks */ = {
@@ -432,6 +451,7 @@
 				DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */,
 				DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */,
 				DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */,
+				DCB34D3029E4EC5E0051FF6C /* WeatherMainViewController.swift in Sources */,
 				DC50349229E3F7350047269E /* FinanceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -65,6 +65,7 @@ class TravelHeader: UICollectionReusableView {
     
     fileprivate func setupViews() {
         
+        
         let overallStackView = UIStackView(arrangedSubviews: [firstLabel, secondLabel, thirdLabel, searchBar])
         overallStackView.axis = .vertical
         overallStackView.spacing = 10
