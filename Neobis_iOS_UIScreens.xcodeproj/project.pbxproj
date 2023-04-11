@@ -54,6 +54,9 @@
 		DCB34D4129E557CD0051FF6C /* Overpass-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB34D4029E557CD0051FF6C /* Overpass-SemiBold.ttf */; };
 		DCB34D4329E562510051FF6C /* WeatherMiddleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4229E562510051FF6C /* WeatherMiddleCollectionViewController.swift */; };
 		DCB34D4529E5650B0051FF6C /* WeatherBottomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4429E5650A0051FF6C /* WeatherBottomCollectionViewController.swift */; };
+		DCB34D4729E56FF50051FF6C /* WeatherMiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4629E56FF50051FF6C /* WeatherMiddleCell.swift */; };
+		DCB34D4929E570150051FF6C /* WeatherBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4829E570150051FF6C /* WeatherBottomCell.swift */; };
+		DCB34D4B29E574090051FF6C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4A29E574080051FF6C /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +111,9 @@
 		DCB34D4029E557CD0051FF6C /* Overpass-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBold.ttf"; sourceTree = "<group>"; };
 		DCB34D4229E562510051FF6C /* WeatherMiddleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiddleCollectionViewController.swift; sourceTree = "<group>"; };
 		DCB34D4429E5650A0051FF6C /* WeatherBottomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBottomCollectionViewController.swift; sourceTree = "<group>"; };
+		DCB34D4629E56FF50051FF6C /* WeatherMiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiddleCell.swift; sourceTree = "<group>"; };
+		DCB34D4829E570150051FF6C /* WeatherBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBottomCell.swift; sourceTree = "<group>"; };
+		DCB34D4A29E574080051FF6C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,7 @@
 				DC50345229E2F5000047269E /* Serials.swift */,
 				DC50349729E3FAED0047269E /* Finance.swift */,
 				DC5034B129E439080047269E /* Crypto.swift */,
+				DCB34D4A29E574080051FF6C /* Weather.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +326,8 @@
 		DCB34D2E29E4EC200051FF6C /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				DCB34D4629E56FF50051FF6C /* WeatherMiddleCell.swift */,
+				DCB34D4829E570150051FF6C /* WeatherBottomCell.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -475,6 +484,7 @@
 				DC50343329E2A88E0047269E /* MainViewController.swift in Sources */,
 				DC50348629E3DDA50047269E /* TravelHeader.swift in Sources */,
 				DC50345029E2DA780047269E /* SinglesCollectionViewHeader.swift in Sources */,
+				DCB34D4729E56FF50051FF6C /* WeatherMiddleCell.swift in Sources */,
 				DC5034A829E420A60047269E /* CryptoTabBarController.swift in Sources */,
 				DC50344629E2B7BD0047269E /* MainViewCell.swift in Sources */,
 				DC5034B029E438230047269E /* CryptoCell.swift in Sources */,
@@ -491,10 +501,12 @@
 				DC50348229E3DC4D0047269E /* TravelCollectionViewController.swift in Sources */,
 				DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */,
 				DC5034A029E41B020047269E /* FinanceFooter.swift in Sources */,
+				DCB34D4B29E574090051FF6C /* Weather.swift in Sources */,
 				DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */,
 				DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */,
 				DCB34D3929E52F2E0051FF6C /* WeatherMiddleViewController.swift in Sources */,
 				DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */,
+				DCB34D4929E570150051FF6C /* WeatherBottomCell.swift in Sources */,
 				DCB34D3029E4EC5E0051FF6C /* WeatherMainViewController.swift in Sources */,
 				DC50349229E3F7350047269E /* FinanceCell.swift in Sources */,
 			);
