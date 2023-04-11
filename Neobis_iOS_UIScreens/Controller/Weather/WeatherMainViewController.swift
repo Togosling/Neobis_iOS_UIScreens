@@ -112,46 +112,46 @@ class WeatherMainViewController: UIViewController {
     }
     
     fileprivate func setupViews() {
-        
+                
         view.addSubview(leftImageView)
         leftImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
-            make.top.equalToSuperview().offset(100)
+            make.top.equalToSuperview().offset(view.frame.height / 9.26)
         }
         
         view.addSubview(rightImageView)
         rightImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(-30)
-            make.trailing.equalToSuperview().offset(50)
+            make.top.equalToSuperview().offset(-(view.frame.height / 30.8))
+            make.trailing.equalToSuperview().offset(view.frame.height / 18.52)
         }
         
         view.addSubview(locationImageView)
         locationImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(70)
-            make.leading.equalToSuperview().offset(35)
+            make.top.equalToSuperview().offset(view.frame.height / 13.2)
+            make.leading.equalToSuperview().offset(view.frame.height / 26.4)
         }
         
         view.addSubview(locationLabel)
         locationLabel.snp.makeConstraints { make in
             make.top.equalTo(locationImageView.snp.top)
-            make.leading.equalTo(locationImageView.snp.trailing).offset(20)
+            make.leading.equalTo(locationImageView.snp.trailing).offset(view.frame.height / 46.3)
         }
         
         view.addSubview(locationButton)
         locationButton.snp.makeConstraints { make in
             make.top.equalTo(locationImageView.snp.top).offset(5)
-            make.leading.equalTo(locationLabel.snp.trailing).offset(20)
+            make.leading.equalTo(locationLabel.snp.trailing).offset(view.frame.height / 46.3)
         }
         
         view.addSubview(alertButton)
         alertButton.snp.makeConstraints { make in
             make.top.equalTo(locationImageView.snp.top)
-            make.trailing.equalToSuperview().offset(-35)
+            make.trailing.equalToSuperview().offset(-(view.frame.height / 26.4))
         }
         
         view.addSubview(sunBackImageView)
         sunBackImageView.snp.makeConstraints { make in
-            make.top.equalTo(locationLabel.snp.bottom).offset(50)
+            make.top.equalTo(locationLabel.snp.bottom).offset(view.frame.height / 18.52)
             make.centerX.equalToSuperview()
         }
         view.addSubview(sunImageView)
@@ -161,18 +161,18 @@ class WeatherMainViewController: UIViewController {
         
         view.addSubview(dateViewController.view)
         dateViewController.view.snp.makeConstraints { make in
-            make.top.equalTo(sunImageView.snp.bottom).offset(70)
-            make.leading.equalToSuperview().offset(30)
-            make.trailing.equalToSuperview().offset(-30)
+            make.top.equalTo(sunImageView.snp.bottom).offset(view.frame.height / 13.2)
+            make.leading.equalToSuperview().offset((view.frame.height / 30.8))
+            make.trailing.equalToSuperview().offset(-(view.frame.height / 30.8))
             make.height.equalTo(view.frame.height / 2.6)
         }
         
         view.addSubview(weekButton)
         weekButton.snp.makeConstraints { make in
-            make.top.equalTo(dateViewController.view.snp.bottom).offset(60)
-            make.leading.equalToSuperview().offset(70)
-            make.trailing.equalToSuperview().offset(-70)
-            make.height.equalTo(70)
+            make.top.equalTo(dateViewController.view.snp.bottom).offset((view.frame.height / 15.4))
+            make.leading.equalToSuperview().offset(view.frame.height / 13.2)
+            make.trailing.equalToSuperview().offset(-(view.frame.height / 13.2))
+            make.height.equalTo(view.frame.height / 13.2)
         }
         
     }
