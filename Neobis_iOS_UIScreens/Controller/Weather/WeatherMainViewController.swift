@@ -65,7 +65,6 @@ class WeatherMainViewController: UIViewController {
     
     let weekButton: UIButton = {
         let button = UIButton(type: .system)
-    
         button.setTitle("Прогноз на неделю", for: .normal)
         button.titleLabel?.font = UIFont(name: "Overpass-Regular", size: 16)
         button.setImage(UIImage(named:"up"), for: .normal)
@@ -73,6 +72,7 @@ class WeatherMainViewController: UIViewController {
         button.semanticContentAttribute = .forceRightToLeft
         button.backgroundColor = .white
         button.layer.cornerRadius = 20
+    
         return button
     }()
     
