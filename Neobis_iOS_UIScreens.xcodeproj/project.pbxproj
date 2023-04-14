@@ -57,6 +57,12 @@
 		DCB34D4729E56FF50051FF6C /* WeatherMiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4629E56FF50051FF6C /* WeatherMiddleCell.swift */; };
 		DCB34D4929E570150051FF6C /* WeatherBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4829E570150051FF6C /* WeatherBottomCell.swift */; };
 		DCB34D4B29E574090051FF6C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB34D4A29E574080051FF6C /* Weather.swift */; };
+		DCBA41D429E94EC00051F2A8 /* FlexibleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA41D329E94EC00051F2A8 /* FlexibleLayout.swift */; };
+		DCBA41D629E950A50051F2A8 /* FinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA41D529E950A50051F2A8 /* FinanceView.swift */; };
+		DCBA41D829E952540051F2A8 /* CryptoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA41D729E952540051F2A8 /* CryptoMainView.swift */; };
+		DCBA41DA29E956570051F2A8 /* WeatherMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA41D929E956570051F2A8 /* WeatherMainView.swift */; };
+		DCBA41DC29E9594A0051F2A8 /* WeatherMiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA41DB29E9594A0051F2A8 /* WeatherMiddleView.swift */; };
+		DCBA41DE29E95A480051F2A8 /* WeatherWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA41DD29E95A480051F2A8 /* WeatherWeekView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +120,12 @@
 		DCB34D4629E56FF50051FF6C /* WeatherMiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiddleCell.swift; sourceTree = "<group>"; };
 		DCB34D4829E570150051FF6C /* WeatherBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBottomCell.swift; sourceTree = "<group>"; };
 		DCB34D4A29E574080051FF6C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		DCBA41D329E94EC00051F2A8 /* FlexibleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleLayout.swift; sourceTree = "<group>"; };
+		DCBA41D529E950A50051F2A8 /* FinanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceView.swift; sourceTree = "<group>"; };
+		DCBA41D729E952540051F2A8 /* CryptoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMainView.swift; sourceTree = "<group>"; };
+		DCBA41D929E956570051F2A8 /* WeatherMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainView.swift; sourceTree = "<group>"; };
+		DCBA41DB29E9594A0051F2A8 /* WeatherMiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiddleView.swift; sourceTree = "<group>"; };
+		DCBA41DD29E95A480051F2A8 /* WeatherWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +299,7 @@
 		DC50348C29E3F13A0047269E /* Finance */ = {
 			isa = PBXGroup;
 			children = (
+				DCBA41D529E950A50051F2A8 /* FinanceView.swift */,
 				DC50349129E3F7350047269E /* FinanceCell.swift */,
 				DC50349F29E41B020047269E /* FinanceFooter.swift */,
 			);
@@ -306,6 +319,7 @@
 		DC5034A629E420190047269E /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				DCBA41D729E952540051F2A8 /* CryptoMainView.swift */,
 				DC5034AF29E438230047269E /* CryptoCell.swift */,
 			);
 			path = Crypto;
@@ -326,6 +340,9 @@
 		DCB34D2E29E4EC200051FF6C /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				DCBA41D929E956570051F2A8 /* WeatherMainView.swift */,
+				DCBA41DB29E9594A0051F2A8 /* WeatherMiddleView.swift */,
+				DCBA41DD29E95A480051F2A8 /* WeatherWeekView.swift */,
 				DCB34D4629E56FF50051FF6C /* WeatherMiddleCell.swift */,
 				DCB34D4829E570150051FF6C /* WeatherBottomCell.swift */,
 			);
@@ -336,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				DCB34D3629E52E850051FF6C /* Shadow.swift */,
+				DCBA41D329E94EC00051F2A8 /* FlexibleLayout.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -490,6 +508,7 @@
 				DC5034B029E438230047269E /* CryptoCell.swift in Sources */,
 				DC50349829E3FAED0047269E /* Finance.swift in Sources */,
 				DC50345329E2F5000047269E /* Serials.swift in Sources */,
+				DCBA41D629E950A50051F2A8 /* FinanceView.swift in Sources */,
 				DCB34D4529E5650B0051FF6C /* WeatherBottomCollectionViewController.swift in Sources */,
 				DCB34D4329E562510051FF6C /* WeatherMiddleCollectionViewController.swift in Sources */,
 				DCB34D3F29E553AB0051FF6C /* WeatherWeekViewController.swift in Sources */,
@@ -497,15 +516,20 @@
 				DC5034AA29E421E20047269E /* CryptoMainViewController.swift in Sources */,
 				DC5034B229E439080047269E /* Crypto.swift in Sources */,
 				DC50344E29E2D9690047269E /* SinglesCollectionViewCell.swift in Sources */,
+				DCBA41DE29E95A480051F2A8 /* WeatherWeekView.swift in Sources */,
 				DC50342F29E2A88E0047269E /* AppDelegate.swift in Sources */,
 				DC50348229E3DC4D0047269E /* TravelCollectionViewController.swift in Sources */,
+				DCBA41DC29E9594A0051F2A8 /* WeatherMiddleView.swift in Sources */,
 				DC50343129E2A88E0047269E /* SceneDelegate.swift in Sources */,
 				DC5034A029E41B020047269E /* FinanceFooter.swift in Sources */,
 				DCB34D4B29E574090051FF6C /* Weather.swift in Sources */,
 				DC50348E29E3F3610047269E /* FinanceTabBarController.swift in Sources */,
 				DC50349629E3F8280047269E /* FInanceViewController.swift in Sources */,
 				DCB34D3929E52F2E0051FF6C /* WeatherMiddleViewController.swift in Sources */,
+				DCBA41D429E94EC00051F2A8 /* FlexibleLayout.swift in Sources */,
+				DCBA41D829E952540051F2A8 /* CryptoMainView.swift in Sources */,
 				DC50349029E3F64F0047269E /* FinanceCollectionViewController.swift in Sources */,
+				DCBA41DA29E956570051F2A8 /* WeatherMainView.swift in Sources */,
 				DCB34D4929E570150051FF6C /* WeatherBottomCell.swift in Sources */,
 				DCB34D3029E4EC5E0051FF6C /* WeatherMainViewController.swift in Sources */,
 				DC50349229E3F7350047269E /* FinanceCell.swift in Sources */,

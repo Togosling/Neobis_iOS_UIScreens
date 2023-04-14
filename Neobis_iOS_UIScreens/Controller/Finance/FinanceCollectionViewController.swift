@@ -29,8 +29,6 @@ class FinanceCollectionViewController: UICollectionViewController, UICollectionV
         
         collectionView.register(FinanceCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(FinanceFooter.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: footerId)
-
-        
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -39,7 +37,7 @@ class FinanceCollectionViewController: UICollectionViewController, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: 100)
+        return .init(width: view.frame.width, height: flexibleHeight(to: 100))
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

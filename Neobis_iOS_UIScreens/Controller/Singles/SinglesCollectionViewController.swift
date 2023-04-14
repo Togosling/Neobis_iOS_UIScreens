@@ -38,7 +38,7 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: view.frame.height / 8.2)
+        return .init(width: view.frame.width, height: flexibleHeight(to: 113))
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -50,15 +50,6 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
             cell.labelStackView.transform = CGAffineTransform(scaleX: -1, y: 1)
         }
         
-//        cell.layer.borderWidth = 1
-//        cell.layer.borderColor = UIColor(red: 0.854, green: 0.854, blue: 0.854, alpha: 1).cgColor
-//        
-//        cell.layer.shadowColor = UIColor.red.cgColor
-//        cell.layer.shadowOffset = CGSize(width: 0, height: 1)
-//        cell.layer.shadowRadius = 10
-//        cell.layer.shadowOpacity = 1
-//        cell.layer.masksToBounds = true
-//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: 0).cgPath
         return cell
     }
     
@@ -67,7 +58,7 @@ class SinglesCollectionViewController: UICollectionViewController, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: view.frame.width, height: (view.frame.height) / 4.6)
+        return .init(width: view.frame.width, height: flexibleHeight(to: 201))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

@@ -17,9 +17,12 @@ class TravelCollectionViewController: UICollectionViewController, UICollectionVi
         
         collectionView.register(TravelCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(TravelHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
-        
-        
-                
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 200 {
+            self.dismiss(animated: true)
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -28,7 +31,7 @@ class TravelCollectionViewController: UICollectionViewController, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: view.frame.height / 4)
+        return .init(width: view.frame.width, height: flexibleHeight(to: 230))
     }
     
     
@@ -45,11 +48,11 @@ class TravelCollectionViewController: UICollectionViewController, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: view.frame.width / 1.1, height: view.frame.height / 4)
+        return .init(width: flexibleWidth(to: 389), height: flexibleHeight(to: 230))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return view.frame.width / 37
+        return flexibleWidth(to: 11.5)
     }
     
     init() {

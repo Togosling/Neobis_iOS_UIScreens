@@ -67,10 +67,8 @@ class TravelHeader: UICollectionReusableView {
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
         }
-        
-    }
 
-    
+    }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
